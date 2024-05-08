@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Table</title>
+<style>
+
+table {
+    margin: 0 auto;
+}
+table, th,td {
+    text-align: center;
+  .type-grass { background-color: #78C850; color: white; }
+  .type-poison { background-color: #A040A0; color: white; }
+  .type-fire { background-color: #F08030; color: white; }
+  .type-water { background-color: #6890F0; color: white; }
+  .type-bug { background-color: #adf802; color: #ffffff ; }
+  .type-electric { background-color: #f7d364; color: #ffffff ; }
+  .type-normal { background-color: #909090; color: #ffffff ; }
+  .type-fairy { background-color: #dd85d7; color: #ffffff ; }
+
+  table td{ 
+    width: 150px !important;
+height: 150px !important;
+  }
+
+</style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form {
+                text-align: center;
+            }
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <select name="National Dex" id="National-Dex">
+                <option value="Generation 1">Generation 1</option>
+                <option value="Generation 2">Generation 2</option>
+                <option value="Generation 3">Generation 3</option>
+                <option value="Generation 4">Generation 4</option>
+                <option value="Generation 5">Generation 5</option>
+                <option value="Generation 6">Generation 6</option>
+                <option value="Generation 7">Generation 7</option>
+                <option value="Generation 8">Generation 8</option>
+                <option value="Generation 9">Generation 9</option>
+            </select>
+            <br><br>
+            <input type="file" id="Image" name="Image" accept="image/*" multiple>
+            <br><br>
+            <label for="Type-1-Normal">Normal</label>
+            <input type="radio" id="Type-1-Normal" name="Type-1" value="Normal" required>
+
+            <label for="Type-1-Fire">Fire</label>
+            <input type="radio" id="Type-1-Fire" name="Type-1" value="Fire">
+
+            <label for="Type-1-Water">Water</label>
+            <input type="radio" id="Type-1-Water" name="Type-1" value="Water">
+
+            <label for="Type-1-Electric">Electric</label>
+            <input type="radio" id="Type-1-Electric" name="Type-1" value="Electric">
+
+            <label for="Type-1-Etc">Etc</label>
+            <input type="radio" id="Type-1-Etc" name="Type-1" value="Etc">
+
+            <br><br>
+
+            <label for="Type-2-Normal">Normal</label>
+            <input type="radio" id="Type-2-Normal" name="Type-2" value="Normal">
+            <label for="Type-2-Fire">Fire</label>
+            <input type="radio" id="Type-2-Fire" name="Type-2" value="Fire">
+            <label for="Type-2-Water">Water</label>
+            <input type="radio" id="Type-2-Water" name="Type-2" value="Water">
+            <label for="Type-2-Electric">Electric</label>
+            <input type="radio" id="Type-2-Electric" name="Type-2" value="Electric">
+            <label for="Type-1-Etc">Etc</label>
+            <input type="radio" id="Type-1-Etc" name="Type-1" value="Etc">
+            <br><br>
+            <input type="text" id="Evolves-from" name="Evolves from" placeholder="Evolves from" required>
+            <br><br>
+            <input type="text" id="Evolves-to" name="Evolves to" placeholder="Evolves to">
+            <br><br>
+            <input type="text" id="Nickname" name="Nickname" placeholder="Nickname" required>
+            <br><br>
+            <input type="text" id="Birthday" name="Birthday" placeholder="Birthday (dd/mm/yyyy)" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
+<br>
+
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>National Dex</th>
+      <th>Generation</th>
+      <th>Pokemon Name</th>
+      <th>Image</th>
+      <th>Type 1</th>
+      <th>Type 2</th>
+      <th>Evolves From</th>
+      <th>Evolves To</th>
+      <th>Nickname</th>
+      <th>Birthday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Generation 1</td>
+      <td>Bulbasaur</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpHaQeXFw2FR_yJ14tJMsVC2xwZ9_U3bRHrW2NAS8JEg&s" alt="Bulbasaur"></td>
+      <td class="type-grass">Grass</td>
+      <td class="type-poison">Poison</td>
+      <td>None</td>
+      <td>Ivysaur</td>
+      <td>Palaka</td>
+      <td>01-01-2024</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Generation 1</td>
+      <td>Charmander</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSadxQYN2HapR2y2idIRdt7eJMvVVYUap3H98c-lWRwtQ&s" alt="Charmander"></td>
+      <td class="type-fire">Fire</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Charmeleon</td>
+      <td>Butiki</td>
+      <td>01-01-2024</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Generation 1</td>
+      <td>Squirtle</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OHOp2oBRXwjkRjYw9KspCFlQFAkS1fzASPD3Nt9GEg&s" alt="Squirtle"></td>
+      <td class="type-water">Water</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Wartortle</td>
+      <td>Pagong</td>
+      <td>01-01-2024</td>
+    </tr>
+
+    <tr>
+        <td>13</td>
+        <td>Generation 1</td>
+        <td>Weedle</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTFK8JBgd8BpasMVvPJlJZ03euNQzHMElO0cnmnF6ang&s" alt="Weedle"></td>
+        <td class="type-bug">Bug</td>
+        <td>None</td>
+        <td>None</td>
+        <td>Beedrill</td>
+        <td>Uod</td>
+        <td>01-01-2024</td>
+      </tr>
+
+      <tr>
+        <td>25</td>
+        <td>Generation 1</td> 
+        <td>Pikachu</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png" alt="Pikachu"></td>
+        <td class="type-electric">Electric</td>
+        <td>None</td>
+        <td>None</td>
+        <td>Raichu</td>
+        <td>Daga</td>
+        <td>01-01-2024</td>
+      </tr>
+  
+      <tr>
+        <td>39</td>
+        <td>Generation 1</td>
+        <td>JigglyPuff</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztlYRW1-VUAzx4oOXn2eIOC1D91WJTvcmxGIM5FDo6A&s" alt="JigglyPuff"></td>
+        <td class="type-normal">Normal</td>
+        <td class="type-fairy">Fairy</td>
+        <td>None</td>
+        <td>WigglyPuff</td>
+        <td>Donut</td>
+        <td>01-01-2024</td>
+      </tr>
+  
+      <tr>
+        <td>43</td>
+        <td>Generation 1</td>
+        <td>Oodish</td>
+        <td><img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokedex/7/79/Eliza_strong_Oddish.png?width=325" alt="Oodish"></td>
+        <td class="type-grass">Grass</td>
+        <td class="type-poison">Poison</td>
+        <td>None</td>
+        <td>VilePlume</td>
+        <td>Halamanin</td>
+        <td>01-01-2024</td>
+      </tr>
+
+      <tr>
+        <td>69</td>
+        <td>Generation 1</td>
+        <td>Bellsprout</td>
+        <td><img src="https://img.pokemondb.net/sprites/home/normal/2x/bellsprout.jpg" alt="Bellsprout"></td>
+        <td class="type-grass">Grass</td>
+        <td class="type-poison">Poison</td>
+        <td>None</td>
+        <td>Victreebell</td>
+        <td>Peashooter</td>
+        <td>01-01-2024</td>
+      </tr>
+     
+      <tr>
+        <td>72</td>
+        <td>Generation 1</td>
+        <td>Tentacool</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_nfnVHP336q8tGZnJAScGZ7jHvUqZSmidzWb-saR2w&s" alt="Tentacool"></td>
+        <td class="type-water">Water</td>
+        <td class="type-poison">Poison</td>
+        <td>None</td>
+        <td>Tentacruel</td>
+        <td>Calamares</td>
+        <td>01-01-2024</td>
+      </tr>
+
+      <tr>
+        <td>10/10</td>
+        <td>Generation 5</td>
+        <td>Miles Garcia</td>
+        <td><img src="https://github.com/mlsmrcln30/pls-ignore/blob/main/epbi.jpg?raw=true" alt="Miles Garcia" style=" width:200px;height200px;"></td>
+        <td class="type-fire">Fire</td>
+        <td class="type-fairy">Fairy</td>
+        <td>None</td>
+        <td>Tao</td>
+        <td>Naka Jacket</td>
+        <td>01-01-2024</td>
+      </tr>
+    
+</style>
+
+  </tbody>
+</table>
+</body>
+</html>
+``
