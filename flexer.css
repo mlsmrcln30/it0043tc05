@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/586/333/desktop-wallpaper-pokeball-background-live-pokeball-pokebola.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255,255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pokemon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(25% - 20px);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(43, 8, 84, 0.8);
+    background-image: url('https://raw.githubusercontent.com/mlsmrcln30/it0043tc05/main/pokeball_background.png');
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.pokemon-image{
+
+height: 100px;
+background-position: center;
+background-repeat: no-repeat;
+
+    width: 100px;
+    margin-botton: 10px;
+    background-size: contain;
+}
+
+.spacing{
+    height: 30px; 
+}
+
+.elements{
+    display:flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    justify-content: center;
+    margin: 4px;
+}
+
+.element{
+    padding: 5px 10px;
+    background-color: rgba(255, 255,255, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.element.grass {background-color:#307d09;}
+.element.poison {background-color:#A040A0;}
+.element.psychic {background-color:#F85888;}
+.element.dragon {background-color:#3d10a5;}
+.element.normal {background-color:#9c9c95;}
+.element.flying {background-color:#A890F0;}
+.element.water {background-color:#6890F0;}
+.element.bug {background-color:#A8B820;}
+.element.ghost {background-color:#705898;}
+
+.pokemon:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+#bellsprout .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/bellsprout.png?raw=true'); }
+#bulbasaur .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/bullbasaur.png?raw=true'); }
+#abra .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/abra.png?raw=true'); }
+#dratini .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/dratini.png?raw=true'); }
+#meowth .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/meowth.png?raw=true'); }
+#rattata .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/rattata.png?raw=true'); }
+#zubat .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/zubat.png?raw=true'); }
+#eevee .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/eevee.png?raw=true'); }
+#mew .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/mew.png?raw=true'); }
+#psyduck .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/psyduck.png?raw=true'); }
+#venonat .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/venonat1.png?raw=true'); }
+#haunter .pokemon-image { background-image: url('https://github.com/mlsmrcln30/it0043tc05/blob/main/haunter.png?raw=true'); }
+
+@media (max-width:768px){
+    .grid-container {
+        flex-direction:column;
+    }
+    .pokemon{
+        width: 100%;
+        margin: 10px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pokemon-image{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .spacing {
+        display: none;
+
+    }
+    .elements{
+        position: static;
+        justify-content: flex-start
+        gap: 10px;
+    }
+    }
+
+    
