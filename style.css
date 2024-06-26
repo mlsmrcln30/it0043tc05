@@ -1,10 +1,6 @@
 body {
     font-family: sans-serif;
-
   }
-
- 
-  
   
   .container {
     display: flex;
@@ -17,7 +13,7 @@ body {
   .box {
     width: 100px;
     height: 100px;
-    
+    background-color: #ad0000;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -27,8 +23,6 @@ body {
   
   .controls {
     margin-top: 20px;
-    margin: 0 auto;
-    width: 50%;
   }
   
   .control-group {
@@ -81,15 +75,15 @@ body {
   }
   
   .box:nth-child(1) {
-    background-color: #224368; /* pink */
+    background-color: #ff69b4; /* pink */
   }
   
   .box:nth-child(2) {
-    background-color: #1a441a; /* green */
+    background-color: #33cc33; /* green */
   }
   
   .box:nth-child(3) {
-    background-color: #41372c; /* blue */
+    background-color: #66CCCC; /* blue */
   }
   
 
@@ -101,4 +95,3 @@ body {
   .box {
     transition: transform 0.3s, box-shadow 0.3s;
   }
-
