@@ -1,1 +1,75 @@
-Miles Garcia
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flexbox Simulator</h1>
+<div class="container">
+  <div class="box" id="box1">
+    <img src="./forms/anvil.png" alt="Anvil">
+  </div>
+  <div class="box" id="box2">
+    <img src="./forms/anvil.png" alt="Anvil">
+  </div>
+  <div class="box" id="box3">
+    <img src="./forms/anvil.png" alt="Anvil">
+  </div>
+</div>
+
+
+  <div class="controls">
+    <div class="control-group">
+      <label class="control-label" for="gap">Gap:</label>
+      <input type="number" class="control-input" id="gap" value="10" min="0">
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="flex-direction">Flex Direction:</label>
+      <select class="control-input" id="flex-direction">
+        <option value="row">Row</option>
+        <option value="column">Column</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="justify-content">Justify Content:</label>
+      <select class="control-input" id="justify-content">
+        <option value="flex-start">Start</option>
+        <option value="center">Center</option>
+        <option value="flex-end">End</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="align-items">Align Items:</label>
+      <select class="control-input" id="align-items">
+        <option value="flex-start">Start</option>
+        <option value="center">Center</option>
+        <option value="flex-end">End</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="flex-grow">Flex Grow:</label>
+      <div>
+        <button class="button" id="reset-flex-grow">Reset</button>
+        <button class="button" id="grow-all">Grow All</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="box-1-grow">Box 1 Grow:</label>
+      <input type="number" class="control-input" id="box-1-grow" value="0" min="0">
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="box-2-grow">Box 2 Grow:</label>
+      <input type="number" class="control-input" id="box-2-grow" value="0" min="0">
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="box-3-grow">Box 3 Grow:</label>
+      <input type="number" class="control-input" id="box-3-grow" value="0" min="0">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
