@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
   }
-  
+
+
   .container {
     display: flex;
     width: 500px;
@@ -32,6 +33,7 @@ body {
   .control-label {
     display: block;
     margin-bottom: 5px;
+       color: black;
   }
   
   .control-input {
