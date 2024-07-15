@@ -1,0 +1,385 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/forms/viss.jpg');
+    background-size: cover;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+header {
+    background-image: url('/forms/gradient.avif');
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile img:hover {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#home {
+    color: #fff;
+}
+
+#about {
+    color: #fff;
+}
+
+#portfolio {
+    color: #fff;
+}
+
+#more-info {
+    color: #fff;
+}
+
+#contact {
+    color: #fff;
+}
+
+#certification {
+    color: #ffffff;
+}
+
+#interests {
+    color: #ffffff;
+}
+
+#school-info {
+    color: #ffffff;
+}
+
+
+nav { 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a { 
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.about-box {
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #363fc8;
+}
+
+
+.about-box:hover {
+    transform: scale(1.01);
+}
+
+.about-box h3 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.school-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.school-card:hover {
+transform: scale(1.01);
+}
+
+.school-card img {
+    width: 80px;
+}
+
+.education-card {
+    background-color: #ee537c;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.01);
+}
+
+.education-card h3 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.certification-card {
+    background-color: #ffce54;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: scale(1.01);
+}
+
+.certification-card h3 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.certification-card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.interests-card {
+    background-color: #fb9c36;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.interests-card:hover {
+   transform: scale(1.01);
+}
+
+.interests-card h3 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+background-color: #bd179c;
+padding: 20px;
+border-radius: 10px;
+transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.01);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.project-card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.more-info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.more-info-section:hover {
+    transform: scale(1.01);
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.social-link.facebook {
+    background-color: #1877f2;
+}
+
+.social-link.gmail {
+    background-color: #db4437;
+}
+
+.social-link.instagram {
+    background-color: #f9219f;
+}
+
+.social-link img {
+    width: 20px;
+    height: auto;
+}
+
+form {
+max-width: 600px;
+margin: 0 auto;
+background-color: #33432e; 
+padding: 20px;
+border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff00ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 600px;
+    max-height: 80%;
+    width: 80%;
+}
+
+.close {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, 
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        font-size: 0.6em;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project-card img {
+        height: auto;
+    }
+
+    .social-link img {
+        width: 40px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .about-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .social-link img {
+        width: 30px;
+    }
+    }
+
+
